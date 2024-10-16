@@ -1,0 +1,6 @@
+{% ckan_extends %}
+
+{% block basic_fields_description %}
+{{ super() }}
+{{ form.input('resource_report_id_text', label=_('Report ID'), id='field-resource_report_id_text', placeholder=_('input report id'), value=data.resource_report_id_text, error=errors.resource_report_id_text, classes=['control-medium']) }}
+{% endblock %}
